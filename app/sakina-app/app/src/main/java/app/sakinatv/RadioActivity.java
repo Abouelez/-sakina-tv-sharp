@@ -25,6 +25,8 @@ public class RadioActivity extends Activity {
     // STREAM can hold several links separated by "|": the next one is tried each time the current one fails.
     private final String[] links = BuildConfig.STREAM.split("\\|");
     private int link = 0;
+    private static final long PREPARE_TIMEOUT_MS = 12000;
+    private final Runnable stalled = this::retry;
 
     @Override
     protected void onCreate(Bundle b) {
@@ -85,6 +87,7 @@ public class RadioActivity extends Activity {
                 .setUsage(AudioAttributes.USAGE_MEDIA)
                 .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH).build());
         player.setOnPreparedListener(mp -> {
+            handler.removeCallbacks(stalled);
             mp.start();
             status.setText("● بث مباشر");
         });
@@ -94,6 +97,9 @@ public class RadioActivity extends Activity {
         try {
             player.setDataSource(links[link]);
             player.prepareAsync();
+            // Some TV players (MediaTek, Sharp Google TV) never answer a stream that redirects to http: no prepared,
+            // no error. Move on to the next link instead of waiting on "connecting" forever.
+            handler.postDelayed(stalled, PREPARE_TIMEOUT_MS);
         } catch (Exception e) {
             retry();
         }

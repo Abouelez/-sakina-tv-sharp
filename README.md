@@ -10,6 +10,7 @@
 - **لوحة إعدادات سريعة جديدة على زر الترس ⚙️**: لوحة جانبية فيها المدخلات، الصورة، الصوت، مؤقت النوم، الشبكة، التطبيقات، الإعدادات، والواجهة.
 - **الإشعارات داخل سكينة**: الإشعارات بتظهر في اللوحة، وتقدر تفتح أي إشعار أو تمسحهم كلهم.
 - **أزرار الريموت شغّالة زي الأصل**: زر التطبيقات بيفتح مكتبة التطبيقات، وزر TV بيفتح البث المباشر، والضغطة الطويلة عليه بتفتح قايمة المدخلات فوق الشاشة الحالية. وضغطة مطوّلة على الصوت بتعلّيه أو توطّيه على طول.
+- **إذاعة القرآن الكريم شغّالة**: لو رابط البث ما ردّش خلال 12 ثانية بتنتقل للرابط التاني.
 - **خلفيات طبيعة ومساجد**: 12 صورة طبيعة و5 صور لمساجد القاهرة، تختارها من الواجهة ← الخلفية.
 
 </div>
@@ -51,6 +52,10 @@ alternated between the two. The fix keeps `launcherx` disabled and moves its job
 | Apps | `KEYCODE_ALL_APPS` (284) | `"284:library"`, `app_library: true` |
 | TV | scancode 362 | `"scan:362:com.mediatek.wwtv.tvcenter"` (Live TV); `"hold:scan:362:com.google.android.tv.inputplayer/.switcher.SelectInputActivity"` (input popup) |
 | Volume hold | (never reaches the helper) | `volume_pauses_filter: true`; `consume_volume_keys` did not work here |
+
+**Quran Radio stuck on "connecting".** The TV's MediaPlayer never answered the radiojar stream (it redirects to
+http): no prepared, no error. `RadioActivity` now moves to the next link after 12 s, and the working
+`radio.xecod.com` stream is tried first.
 
 ## Install / update
 
