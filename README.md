@@ -4,6 +4,15 @@
 
 نسخة من [سكينة TV](https://github.com/shariefabdelmonem-netizen/sakina-tv) ومشغّل [CleanYourTV](https://github.com/Gathin23/cleanyourtv)، متعدّلة ومجرّبة على تلفزيون **Sharp 4K Google TV** (أندرويد 14، معالج MediaTek).
 
+## المشروع الأصلي 🙏
+
+النسخة دي مبنية على شغل ناس تانية، وكل الفضل ليهم:
+
+- **[سكينة TV](https://github.com/shariefabdelmonem-netizen/sakina-tv)**، من [shariefabdelmonem-netizen](https://github.com/shariefabdelmonem-netizen): الفكرة الأساسية، كروت القرآن والأذكار والإذاعة، الأذان، وطريقة التركيب. النسخة دي مأخوذة من الكوميت `a5195ff` (11 نوفمبر 2026).
+- **[CleanYourTV](https://github.com/Gathin23/cleanyourtv)**، من [Gathin23](https://github.com/Gathin23) والمساهمين فيه: المشغّل (الشاشة الرئيسية) وأدوات تنظيف التلفزيون اللي سكينة مبنية عليها. مأخوذ من الكوميت `b9538048` (11 نوفمبر 2026).
+
+لو عايز سكينة لتلفزيون تاني، ابدأ من [المشروع الأصلي](https://github.com/shariefabdelmonem-netizen/sakina-tv). النسخة دي فيها بس التعديلات اللي احتاجها تلفزيون شارب.
+
 ## الإضافات
 
 - **سكينة هي الشاشة الرئيسية دايماً**: عند التشغيل ومع زر Home، من غير ما شاشة جوجل تي في ترجع تظهر.
@@ -22,6 +31,21 @@
 A copy of [Sakina TV](https://github.com/shariefabdelmonem-netizen/sakina-tv) with a modified
 [CleanYourTV](https://github.com/Gathin23/cleanyourtv) launcher, set up and tested on a **Sharp 4K Google TV**
 (Google TV 14, MediaTek, 2 GB RAM).
+
+## Based on
+
+This is not an original project. All credit for the base goes to:
+
+- **[Sakina TV](https://github.com/shariefabdelmonem-netizen/sakina-tv)** by
+  [shariefabdelmonem-netizen](https://github.com/shariefabdelmonem-netizen): the idea, the Quran/adhkar/radio
+  cards, the adhan, and the install flow. Copied from commit `a5195ff` (2026-11-11).
+- **[CleanYourTV](https://github.com/Gathin23/cleanyourtv)** by [Gathin23](https://github.com/Gathin23) and its
+  contributors: the launcher and the TV clean-up tools Sakina is built on. Copied from commit `b9538048`
+  (2026-11-11).
+
+For any other TV, start from [the original Sakina TV](https://github.com/shariefabdelmonem-netizen/sakina-tv).
+This repository only adds the changes a Sharp Google TV needed. Both projects are MIT-licensed; their licence
+files are kept in `app/LICENSE` and `cleanyourtv/LICENSE`.
 
 ## Layout
 
