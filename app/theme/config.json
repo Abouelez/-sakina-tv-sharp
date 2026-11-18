@@ -1,0 +1,8 @@
+{
+  "dock_apps": ["app.sakinatv.kahf", "app.sakinatv.baqara", "app.sakinatv.radio", "app.sakinatv.sabah", "app.sakinatv.masa", "app.sakinatv.ruqya",
+                "com.majnioui.tv.prayer", "com.netflix.ninja", "com.google.android.youtube.tv"],
+  "shamsi_date": true,
+  "wallpaper": false,
+  "wallpaper_dim": 25,
+  "dock_opacity": 70
+}

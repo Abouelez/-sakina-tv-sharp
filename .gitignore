@@ -1,0 +1,11 @@
+# build outputs and machine-specific files
+build/
+.gradle/
+local.properties
+*.apk
+__pycache__/
+venv/
+# never commit ADB keys, backups, or the downloaded adhan
+adbkey*
+backup/
+*.mp3

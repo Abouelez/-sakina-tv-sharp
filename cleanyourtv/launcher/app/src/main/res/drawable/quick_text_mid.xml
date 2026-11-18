@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Secondary text in the quick settings sheet: dark on a focused (white) card, soft white otherwise. -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_focused="true" android:color="#CC111111" />
+    <item android:color="#A6FFFFFF" />
+</selector>

@@ -1,0 +1,8 @@
+{
+  "name": "sakina-tv",
+  "version": "1.2.0",
+  "description": "نظّف تلفزيون أندرويد/قوقل تي في من الإعلانات، وخلّه يأذّن ويذكّرك بالصلاة. كلود يمشّيك خطوة خطوة.",
+  "author": { "name": "shariefabdelmonem-netizen" },
+  "homepage": "https://github.com/shariefabdelmonem-netizen/sakina-tv",
+  "license": "MIT"
+}
